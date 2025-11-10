@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Suite2_Groups">
+    <test name="MathAndStringTests">
+        <groups>
+            <run>
+                <include name="math"/>
+                <include name="string"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="org.example"/>
+        </packages>
+    </test>
+</suite>

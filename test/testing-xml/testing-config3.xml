@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Suite3_GroupsExclude">
+    <test name="AllExceptExceptionGroup">
+        <groups>
+            <run>
+                <exclude name="exception"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="org.example"/>
+        </packages>
+    </test>
+</suite>
